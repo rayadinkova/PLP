@@ -104,10 +104,10 @@ export default {
   methods: {
     async loadProducts() {
       try {
-        const response = await fetch("/data.json"); // Fetch from the public folder
+        const response = await fetch("/data.json");
         const data = await response.json();
 
-        // Extract products and unique brands
+      
         this.products = data.products.filter((product) =>
           product.categories.includes("women")
         );
@@ -125,8 +125,8 @@ export default {
 <style scoped>
 .main-menu-container {
   position: relative;
-  z-index: 50; /* Ensures it's above other components */
-  background-color: white; /* Prevent content from overlapping */
+  z-index: 50; 
+  background-color: white;
 }
 
 .plp-container {
