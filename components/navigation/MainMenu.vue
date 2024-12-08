@@ -53,7 +53,7 @@ export default {
   setup() {
     const categoriesStore = useCategoriesStore();
 
-    // Fetch categories data on component mount
+    // Fetching categories data on component mount
     categoriesStore.fetchData();
 
     return { categoriesStore };
